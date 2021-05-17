@@ -41,17 +41,6 @@ function buscar(item) {
   }
 }
 
-function filtrados(elemento) {
-  elemento = prompt('Ingrese el producto a filtrar:');
-  if (!elemento) {
-    console.error('No se ingreso un producto');
-  } else if ((elemento = changuito)) {
-    return elemento;
-  } else {
-    console.log('El producto ingresado no se encuentra en el carrito:');
-  }
-}
-
 function eliminar(items) {
   items = prompt('¿Qué producto deseas eliminar?');
 
@@ -99,7 +88,6 @@ while (menu >= 1 && menu <= 5) {
     case 4:
       //   let prodcutosFiltrados = changuito.filter(filtrados);
       //   console.log(prodcutosFiltrados);
-      filtrados();
       break;
 
     case 5:
