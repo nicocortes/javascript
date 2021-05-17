@@ -4,7 +4,7 @@ alert('Bienvenido a ChangApp!!');
 
 let menu = parseInt(
   prompt(
-    'Ingrese una opción del 1 al 5: \n \n 1) Agregar un producto \n 2) Mostrar los productos agregados \n 3) Buscar un producto \n 4) Filtrar un producto según palabra \n 5) Eliminar producto \n 6) Salir'
+    'Ingrese una opción del 1 al 6: \n \n 1) Agregar un producto \n 2) Mostrar los productos agregados \n 3) Buscar un producto \n 4) Filtrar un producto según palabra \n 5) Eliminar producto \n 6) Salir'
   )
 );
 let changuito = [];
@@ -82,7 +82,7 @@ function valorCorrecto() {
     console.error('Ingrese una opción válida. O pulse "6" para salir');
     menu = parseInt(
       prompt(
-        'Ingrese una opción del 1 al 5: \n \n 1) Agregar un producto \n 2) Mostrar los productos agregados \n 3) Buscar un producto \n 4) Filtrar un producto según palabra \n 5) Eliminar producto \n 6) Salir'
+        'Ingrese una opción del 1 al 6: \n \n 1) Agregar un producto \n 2) Mostrar los productos agregados \n 3) Buscar un producto \n 4) Filtrar un producto según palabra \n 5) Eliminar producto \n 6) Salir'
       )
     );
   }
@@ -120,7 +120,7 @@ while (menu >= 1 && menu <= 5) {
 
   menu = parseInt(
     prompt(
-      'Ingrese una opción del 1 al 5: \n \n 1) Agregar un producto \n 2) Mostrar los productos agregados \n 3) Buscar un producto \n 4) Filtrar un producto según palabra \n 5) Eliminar producto \n 6) Salir'
+      'Ingrese una opción del 1 al 6: \n \n 1) Agregar un producto \n 2) Mostrar los productos agregados \n 3) Buscar un producto \n 4) Filtrar un producto según palabra \n 5) Eliminar producto \n 6) Salir'
     )
   );
   valorCorrecto();
