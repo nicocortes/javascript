@@ -41,6 +41,25 @@ function buscar(item) {
   }
 }
 
+function filtrar(producto) {
+  if (!producto) {
+    console.error('No se ingreso un producto');
+  } else {
+    let productosFiltrados = changuito.filter(function (filtrados) {
+      return filtrados.substr(0, producto.length) === producto;
+    });
+    if (productosFiltrados.length === 0) {
+      console.log('No se encontró ninguna coincidencia.');
+    } else {
+      console.log(
+        `Coincidencias encontradas para "${producto}": ${productosFiltrados.join(
+          ' - '
+        )}`
+      );
+    }
+  }
+}
+
 function eliminar(items) {
   items = prompt('¿Qué producto deseas eliminar?');
 
@@ -86,8 +105,7 @@ while (menu >= 1 && menu <= 5) {
       break;
 
     case 4:
-      //   let prodcutosFiltrados = changuito.filter(filtrados);
-      //   console.log(prodcutosFiltrados);
+      filtrar(prompt('Ingrese el producto que desea filtrar:'));
       break;
 
     case 5:
